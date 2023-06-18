@@ -1,0 +1,13 @@
+/* font-family: 'Roboto', sans-serif;
+Light 300
+Regular 400
+Medium 500
+Bold 700 */
+
+:root {
+    --primary-font: 'Roboto', sans-serif;
+    --radical-red: #FF214F;
+    --nero: #1C1C1C;
+    --suva-gray: #919191;
+    --bright-gray: #EBEBEB;
+}
