@@ -11,3 +11,10 @@ Bold 700 */
     --suva-gray: #919191;
     --bright-gray: #EBEBEB;
 }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
