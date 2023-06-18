@@ -17,4 +17,32 @@ Bold 700 */
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: var(--bright-gray);
+    font-family: var(--primary-font);
+}
 
+/* nav bar style */
+nav{
+    background-color: var(--radical-red);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1100px;
+    height: 80px;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+/* nav > ul > li{
+    
+} */
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: var(--nero);
+}
