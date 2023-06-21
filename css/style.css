@@ -4,6 +4,7 @@ Regular 400
 Medium 500
 Bold 700 */
 
+/* --------common style START---------- */
 :root {
     --primary-font: 'Roboto', sans-serif;
     --radical-red: #FF214F;
@@ -22,16 +23,21 @@ body{
     font-family: var(--primary-font);
 }
 
-/* nav bar style */
+.container{
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+/* --------common style END---------- */
+
+/* ----------- nav bar style----------- */
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    max-width: 1250px;
     height: 80px;
-    margin: 0 auto;
-    padding: 0 25px;
 }
 
 nav > h1{
@@ -50,4 +56,8 @@ nav > ul > li > a{
     color: var(--nero);
     font-size: 16px;
     font-weight: 400;
+}
+
+.common-section-1{
+    background-color: red;
 }
