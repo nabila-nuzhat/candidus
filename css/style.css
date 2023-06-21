@@ -59,7 +59,6 @@ nav > ul > li > a{
 }
 
 .common-section-1{
-    background-color: yellowgreen;
     padding-top: 14rem;
     padding-bottom: 14rem;
 }
@@ -75,4 +74,10 @@ nav > ul > li > a{
     font-size: 3rem;
     line-height: 56px;
     color: var(--nero);
+}
+
+.section__line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--radical-red);
 }
