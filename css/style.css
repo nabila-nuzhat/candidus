@@ -63,11 +63,19 @@ nav > ul > li > a{
     padding-bottom: 14rem;
 }
 
+.section__title_container{
+    display: flex;
+    align-items: center;
+}
+
 .section__title{
     font-size: 1rem;
     line-height: 19px;
     font-weight: 300;
     color: var(--radical-red);
+/* to null the shrinking of the section_title text that occured due to display flex in the parent container */
+    flex-shrink: 0;
+    margin-right: 7px;
 }
 .section__text{
     font-weight: 300;
