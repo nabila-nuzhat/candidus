@@ -24,7 +24,6 @@ body{
 
 /* nav bar style */
 nav{
-    background-color: var(--radical-red);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,6 +34,11 @@ nav{
     padding: 0 25px;
 }
 
+nav > h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--nero);
+}
 nav > ul{
     display: flex;
     list-style: none;
