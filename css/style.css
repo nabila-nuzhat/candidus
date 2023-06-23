@@ -172,3 +172,8 @@ nav > ul > li > a{
     width: 100%;
     
 }
+
+.long-img{
+    /* span start from starting point of img to 2 (value) rows */
+    grid-row: span 2;
+}
