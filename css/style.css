@@ -145,13 +145,12 @@ nav > ul > li > a{
 }
 
 .section-pagitation{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 300;
     /* width: 20%; */
+    margin-top: 12px;
 }
-.section-pagitation > ul{
-    margin-top: 25px;
-}
+
 .section-pagitation > ul > li{
     padding-top: 9px;
 }
