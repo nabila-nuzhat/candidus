@@ -68,12 +68,17 @@ nav > ul > li > a{
     font-weight: 400;
 }
 
-.common-section-1{
+.common-section--primary,
+.common-section--secondary{
     padding-top: 14rem;
     padding-bottom: 14rem;
 
     display: flex;
     justify-content: space-between;
+}
+
+.common-section--secondary{
+    background-color: var(--nero);
 }
 
 .text-section{
@@ -173,6 +178,7 @@ nav > ul > li > a{
 }
 
 .long-img{
-    /* span start from starting point of img to 2 (value) rows */
+    /* span start from starting point of img to 2 (value) rows 
+    for simple light spans only*/
     grid-row: span 2;
 }
