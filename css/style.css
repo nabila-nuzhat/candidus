@@ -161,3 +161,14 @@ nav > ul > li > a{
     text-decoration: underline;
     color: var(--nero);
 }
+
+/* image-gallery section */
+
+.image-gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.image-gallery img{
+    width: 100%;
+    
+}
