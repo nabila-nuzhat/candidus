@@ -30,6 +30,14 @@ body{
     padding: 0 25px;
 }
 
+ul li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 /* --------common style END---------- */
 
 /* ----------- nav bar style----------- */
@@ -45,14 +53,16 @@ nav > h1{
     font-weight: 600;
     color: var(--nero);
 }
+
+
 nav > ul{
     display: flex;
-    list-style: none;
+    /* list-style: none; */
     gap: 24px;
 }
 
 nav > ul > li > a{
-    text-decoration: none;
+    /* text-decoration: none; */
     color: var(--nero);
     font-size: 16px;
     font-weight: 400;
@@ -61,8 +71,14 @@ nav > ul > li > a{
 .common-section-1{
     padding-top: 14rem;
     padding-bottom: 14rem;
+
+    display: flex;
+    justify-content: space-between;
 }
 
+.text-section{
+    width: 80%;
+}
 .section__title_container{
     display: flex;
     align-items: center;
@@ -105,6 +121,11 @@ nav > ul > li > a{
     color: var(--bright-gray);
 }
 
+.section__text--tertiary{
+   width: 70%;
+   padding-top: 12px;
+}
+
 .section__line--primary, 
 .section__line--secondary,
 .section__line--tertiary{
@@ -121,4 +142,23 @@ nav > ul > li > a{
 }
 .section__line--tertiary{
     background-color: var(--radical-red);
+}
+
+.section-pagitation{
+    font-size: 24px;
+    font-weight: 300;
+    /* width: 20%; */
+}
+.section-pagitation > ul{
+    margin-top: 25px;
+}
+.section-pagitation > ul > li{
+    padding-top: 9px;
+}
+.section-pagitation > ul > li > a{
+    color: var(--suva-gray);
+}
+.section-pagitation > ul > li > a:hover{
+    text-decoration: underline;
+    color: var(--nero);
 }
