@@ -195,3 +195,56 @@ nav > ul > li > a:hover{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+
+/* Footer section */
+
+hr{
+    color: var(--suva-gray);
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+footer h5{
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--suva-gray);
+}
+
+footer .social a i{
+    font-size: 1rem;
+    color: var(--nero);
+}
+
+/* ----------- mediaquery start ----------*/
+@media only screen and (max-width: 850px) {
+    .image-gallery{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+.section__line--primary, 
+.section__line--secondary,
+.section__line--tertiary{
+    display: none;
+}
+
+.section__title_container{
+    justify-content: center;
+}
+
+.section__text--primary,
+.section__text--secondary{
+    text-align: center;
+}
+
+.section__text--primary,
+.section__text--secondary,
+.section__text--tertiary{
+    font-size: 2rem;
+    line-height: 40px;
+}
+}
