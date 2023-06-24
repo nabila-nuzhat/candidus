@@ -48,7 +48,7 @@ nav{
     height: 80px;
 }
 
-nav > h1{
+nav > h1 > a{
     font-size: 30px;
     font-weight: 600;
     color: var(--nero);
@@ -68,6 +68,10 @@ nav > ul > li > a{
     font-weight: 400;
 }
 
+nav > ul > li > a:hover{
+    color: var(--radical-red);
+}
+
 .common-section--primary,
 .common-section--secondary{
     padding-top: 14rem;
@@ -77,13 +81,15 @@ nav > ul > li > a{
     justify-content: space-between;
 }
 
+
+
 .common-section--secondary{
     background-color: var(--nero);
 }
 
-.text-section{
+/* .text-section{
     width: 80%;
-}
+} */
 .section__title_container{
     display: flex;
     align-items: center;
@@ -120,6 +126,7 @@ nav > ul > li > a{
     font-weight: 300;
     font-size: 3rem;
     line-height: 56px;
+    padding-top: 12px;
 }
 
 .section__text--secondary{
@@ -128,7 +135,6 @@ nav > ul > li > a{
 
 .section__text--tertiary{
    width: 70%;
-   padding-top: 12px;
 }
 
 .section__line--primary, 
@@ -181,4 +187,11 @@ nav > ul > li > a{
     /* span start from starting point of img to 2 (value) rows 
     for simple light spans only*/
     grid-row: span 2;
+}
+
+.logo-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
