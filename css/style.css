@@ -18,8 +18,9 @@ Bold 700 */
     margin: 0;
     padding: 0;
 }
+
 body{
-    background-color: var(--bright-gray);
+    /* background-color: var(--bright-gray); */
     font-family: var(--primary-font);
 }
 
@@ -41,34 +42,39 @@ a{
 /* --------common style END---------- */
 
 /* ----------- nav bar style----------- */
+
 nav{
+    background-color: var(--bright-gray);
+}
+
+nav .nav-section{
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
 }
 
-nav > h1 > a{
+nav > .nav-section > h1 > a{
     font-size: 30px;
     font-weight: 600;
     color: var(--nero);
 }
 
 
-nav > ul{
+nav > .nav-section > ul{
     display: flex;
-    /* list-style: none; */
     gap: 24px;
+    flex-wrap: wrap;
 }
 
-nav > ul > li > a{
+nav > .nav-section > ul > li > a{
     /* text-decoration: none; */
     color: var(--nero);
     font-size: 16px;
     font-weight: 400;
 }
 
-nav > ul > li > a:hover{
+nav > .nav-section > ul > li > a:hover{
     color: var(--radical-red);
 }
 
@@ -77,12 +83,19 @@ nav > ul > li > a:hover{
     padding-top: 14rem;
     padding-bottom: 14rem;
 
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.text-pagitation-block{
     display: flex;
     justify-content: space-between;
 }
 
 
-
+.common-section--primary{
+    background-color: var(--bright-gray);
+}
 .common-section--secondary{
     background-color: var(--nero);
 }
@@ -190,7 +203,7 @@ nav > ul > li > a:hover{
 }
 
 .logo-container{
-    margin-top: 20px;
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -203,11 +216,15 @@ hr{
     color: var(--suva-gray);
 }
 footer{
+    background-color: var(--bright-gray);
+}
+
+.footer-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 75px;
     flex-wrap: wrap;
+    height: 75px;
 }
 
 footer h5{
@@ -225,7 +242,7 @@ footer .social a i{
 /* ----------- mediaquery start ----------*/
 @media only screen and (max-width: 850px) {
     .image-gallery{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
 .section__line--primary, 
@@ -250,11 +267,11 @@ footer .social a i{
     line-height: 40px;
 }
 
-footer{
+.footer-container{
     justify-content: center;
 }
 
-footer .social a i{
+.footer-container .social a i{
     padding-left: 28px;
 }
 
@@ -264,5 +281,11 @@ footer .social a i{
     .logo-container{
    justify-content: center;
 }
+ nav .nav-section{
+    flex-direction: column;
+ }
+ nav > .nav-section > ul{
+    flex-direction: column;
+ }
 
 }
