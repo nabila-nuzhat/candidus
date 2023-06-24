@@ -218,6 +218,7 @@ footer h5{
 footer .social a i{
     font-size: 1rem;
     color: var(--nero);
+    padding-left: 35px;
 }
 
 /* ----------- mediaquery start ----------*/
